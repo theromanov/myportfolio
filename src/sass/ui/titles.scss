@@ -1,0 +1,25 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.title {
+  @include title;
+}
+
+.title-fz48 {
+  @include title;
+  font-size: 48px;
+}
+
+.title-fz36 {
+  @include title;
+  font-size: 48px;
+}
+
+.title-fz26 {
+  @include title;
+  font-size: 26px;
+}
+
+.title-fz16 {
+  @include subtitle;
+}

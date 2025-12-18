@@ -1,0 +1,10 @@
+// ui
+@use "/src/sass/libs/modern-normalize.min.css";
+// base
+@use "/src/sass/base/basic.scss";
+@use "/src/sass/base/mixins.scss";
+@use "/src/sass/base/variables.scss";
+// libs
+@use "/src/sass/ui/titles.scss";
+// sections
+@use "/src/sass/blocks/promo.scss";

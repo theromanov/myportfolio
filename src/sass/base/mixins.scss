@@ -1,0 +1,25 @@
+@use "/src/sass/base/variables.scss" as *;
+
+@mixin circle {
+  ::before {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-color: $orange;
+    border-radius: 100%;
+  }
+}
+
+@mixin title {
+  text-align: center;
+  font-weight: 700;
+  line-height: 167%;
+  color: #000;
+}
+
+@mixin subtitle {
+  @include title;
+  @include circle;
+  line-height: normal;
+}
