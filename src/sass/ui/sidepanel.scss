@@ -1,0 +1,44 @@
+@use "/src/sass/base/variables.scss" as *;
+.sidepanel {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .sidepanel {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 54%;
+    left: -8%;
+    transform: rotate(-90deg);
+    column-gap: 15px;
+    z-index: 3;
+
+    &__line {
+      height: 1px;
+      width: 70px;
+      background-color: $black;
+    }
+
+    &__wrapper {
+      display: flex;
+      column-gap: 15px;
+    }
+
+    &__link {
+      transform: rotate(90deg);
+
+      &:hover {
+        svg path {
+          fill: $orange;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .sidepanel {
+    left: -6%;
+  }
+}
