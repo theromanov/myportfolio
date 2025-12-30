@@ -1,0 +1,120 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.about {
+  padding-top: 40px;
+
+  &__main-img {
+    width: 300px;
+    height: 340px;
+    background-image: url("/src/img/about-mobile_bg.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  &__subtitle {
+    margin-top: 45px;
+    text-align: left;
+    padding-left: 12px;
+  }
+
+  &__title {
+    margin-top: 26px;
+    text-align: left;
+  }
+
+  .divider {
+    margin-top: 15px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    color: $black;
+    max-width: 570px;
+    line-height: 140%;
+
+    &-top {
+      text-align: left;
+    }
+
+    &-descr {
+      margin-top: 6px;
+      font-weight: 500;
+      font-size: 12px;
+      color: $black;
+      line-height: 140%;
+    }
+  }
+
+  &__wrapper-item {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: 1fr;
+    row-gap: 20px;
+  }
+
+  &__item {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 40px 1fr;
+  }
+
+  &__img {
+    position: relative;
+    @include circle;
+    max-width: 25px;
+    top: 15px;
+    left: 15px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .about {
+    &__wrapper-item {
+      column-gap: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 595px) {
+  .about {
+    &__wrapper-item {
+      column-gap: 50px;
+      grid-template-columns: repeat(2, minmax(200px, 260px));
+      grid-template-rows: repeat(3, minmax(116px, auto));
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-top: 125px;
+    &__subtitle {
+      margin-top: 6px;
+    }
+    &__title {
+      margin-top: 10px;
+    }
+    &__main-img {
+      width: 400px;
+      height: 600px;
+      background-image: url("/src/img/main_photo.jpg");
+      background-repeat: no-repeat;
+      object-fit: cover;
+    }
+    &__wrapper {
+      column-gap: 70px;
+      grid-template-columns: 400px 572px;
+      &-item {
+        margin-top: 40px;
+      }
+    }
+  }
+}

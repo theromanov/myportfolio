@@ -22,16 +22,16 @@
     padding-left: 10px;
   }
 
-  &__link {
-    text-decoration: none;
-    text-transform: capitalize;
-  }
-
   &__btns {
     display: flex;
     align-items: center;
     column-gap: 40px;
     margin-top: 30px;
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: capitalize;
   }
 }
 
