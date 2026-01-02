@@ -4,15 +4,6 @@
 .resume {
   padding-top: 45px;
 
-  &__subtitle {
-    position: relative;
-    @include circle;
-  }
-
-  &__title {
-    margin-top: 25px;
-  }
-
   &__wrapper {
     margin-top: 40px;
     display: grid;
@@ -119,9 +110,6 @@
   .resume {
     padding-top: 125px;
 
-    &__title {
-      margin-top: 6px;
-    }
     &__wrapper {
       margin-top: 60px;
       padding: 0 77px;

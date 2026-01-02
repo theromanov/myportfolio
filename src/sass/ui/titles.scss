@@ -33,4 +33,34 @@
   &_fz14 {
     font-size: 14px;
   }
+
+  &__section-title {
+    margin-top: 25px;
+  }
+
+  &__section-subtitle {
+    position: relative;
+    top: 6px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 36px;
+      height: 36px;
+      background-color: $orange;
+      border-radius: 100%;
+      z-index: -1;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    &__section-title {
+      margin-top: 6px;
+    }
+  }
 }
