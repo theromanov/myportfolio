@@ -11,3 +11,10 @@ hamburger.addEventListener("click", () => {
 closeElem.addEventListener("click", () => {
   menu.classList.remove("menu_active");
 });
+
+const counters = document.querySelectorAll(".skills__progress-num"),
+  lines = document.querySelectorAll(".skills__progress-fill");
+
+counters.forEach((item, i) => {
+  lines[i].style.width = item.innerHTML;
+});

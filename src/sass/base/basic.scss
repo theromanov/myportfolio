@@ -37,6 +37,8 @@ img {
 }
 
 .divider {
+  margin: 0 auto;
+  margin-top: 15px;
   width: 60px;
   height: 3px;
   background-color: $orange;
@@ -60,11 +62,23 @@ input:-webkit-autofill:focus {
   padding: 0 10px;
 }
 
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 720px;
-    margin: 0 auto;
-    padding: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 920px;
   }
 }
 
