@@ -8,8 +8,8 @@
   color: $black;
 }
 
-@mixin circle {
-  ::before {
+@mixin huy {
+  &::before {
     content: "";
     display: block;
     position: absolute;

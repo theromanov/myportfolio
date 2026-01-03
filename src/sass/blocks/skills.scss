@@ -56,17 +56,10 @@
 
     &-title {
       position: relative;
+      @include huy;
       padding-left: 14px;
       &::before {
-        content: "";
-        position: absolute;
         top: -8px;
-        left: 0;
-        height: 36px;
-        width: 36px;
-        background-color: $orange;
-        border-radius: 100%;
-        z-index: -1;
       }
     }
 
@@ -107,7 +100,7 @@
 
 @media screen and (min-width: 1200px) {
   .skills {
-    padding-top: 120px;
+    padding-top: 125px;
     &__title {
       margin-top: 6px;
     }

@@ -17,9 +17,15 @@
     grid-template-columns: auto;
   }
   &__subtitle {
+    position: relative;
+    @include huy;
     margin-top: 45px;
     text-align: left;
     padding-left: 12px;
+
+    &::before {
+      top: -6px;
+    }
   }
 
   &__title {
@@ -62,16 +68,21 @@
 
   &__item {
     display: grid;
-    column-gap: 20px;
     grid-template-columns: 40px 1fr;
+    column-gap: 20px;
   }
 
   &__img {
-    position: relative;
-    @include circle;
     max-width: 25px;
-    top: 15px;
-    left: 15px;
+    position: relative;
+    @include huy;
+    &::before {
+    }
+    img {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
   }
 }
 

@@ -37,6 +37,7 @@
 
 @media screen and (min-width: 1200px) {
   .portfolio {
+    padding-top: 125px;
     &__wrapper {
       grid-template-columns: repeat(4, 280px);
       gap: 5px;
